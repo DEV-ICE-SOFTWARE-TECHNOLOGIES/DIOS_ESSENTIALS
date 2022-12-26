@@ -1,0 +1,51 @@
+// --------------------------------------------------------------------------------------------------
+// Copyright (C) 2022 DEV ICE TECHNOLOGIES
+// --------------------------------------------------------------------------------------------------
+
+prebuilt_etc {
+    name: "ad_calib",
+    vendor_specific: true,
+    sub_dir: "etc",
+    src: "ad_calib.cfg",
+    filename_from_src: true,
+}
+
+prebuilt_etc {
+    name: "cablconfig",
+    vendor_specific: true,
+    sub_dir: "etc",
+    src: "cablconfig.xml",
+    filename_from_src: true,
+}
+
+prebuilt_etc {
+    name: "FOSSConfig",
+    vendor_specific: true,
+    sub_dir: "etc",
+    src: "FOSSConfig.xml",
+    filename_from_src: true,
+}
+
+prebuilt_etc {
+    name: "hdr_config",
+    vendor_specific: true,
+    sub_dir: "etc",
+    src: "hdr_config.cfg",
+    filename_from_src: true,
+}
+
+prebuilt_etc {
+    name: "hdr_tm_config",
+    vendor_specific: true,
+    sub_dir: "etc",
+    src: "hdr_tm_config.xml",
+    filename_from_src: true,
+}
+
+prebuilt_etc {
+    name: "sdr_config",
+    vendor_specific: true,
+    sub_dir: "etc",
+    src: "sdr_config.cfg",
+    filename_from_src: true,
+}

@@ -1,0 +1,17 @@
+// --------------------------------------------------------------------------------------------------
+// Copyright (C) 2022 DEV ICE TECHNOLOGIES
+// --------------------------------------------------------------------------------------------------
+
+prebuilt_etc {
+    name: "privapp-permissions-google",
+    sub_dir: "permissions",
+    src: "privapp-permissions-google.xml",
+    filename_from_src: true,
+}
+
+prebuilt_etc {
+    name: "privapp-permissions-platform",
+    sub_dir: "permissions",
+    src: "privapp-permissions-platform.xml",
+    filename_from_src: true,
+}

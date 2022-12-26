@@ -1,0 +1,19 @@
+// --------------------------------------------------------------------------------------------------
+// Copyright (C) 2022 DEV ICE TECHNOLOGIES
+// --------------------------------------------------------------------------------------------------
+LOCAL_PATH := $(call my-dir)
+
+cc_prebuilt_library_shared {
+	name: "android.hardware.vr@1.0",
+	owner: "google",
+    strip: {
+        none: true,
+    },
+	target: {
+		android_arm: {
+			srcs: ["android.hardware.vr@1.0.so"],
+		},
+	},
+    check_elf_files: false,
+	product_specific: true,
+}
