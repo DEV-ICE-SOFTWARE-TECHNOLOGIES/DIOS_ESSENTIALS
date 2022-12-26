@@ -10,9 +10,9 @@ PRODUCT_PACKAGES += \
 
 # Diplay configs
 PRODUCT_PACKAGES += \
-    ad_calib
-    cablconfig
-    FOSSConfig
-    hdr_config
-    hdr_tm_config
+    ad_calib \
+    cablconfig \
+    FOSSConfig \
+    hdr_config \
+    hdr_tm_config \
     sdr_config
