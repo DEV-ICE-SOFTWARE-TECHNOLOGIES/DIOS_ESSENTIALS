@@ -43,10 +43,10 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "om.android.systemui",
+    name: "com.android.systemui",
     system_ext_specific: true,
     sub_dir: "permissions",
-    src: "om.android.systemui.xml",
+    src: "com.android.systemui.xml",
     filename_from_src: true,
 }
 
@@ -206,6 +206,6 @@ prebuilt_etc {
     name: "vzw_mvs_permissions",
     system_ext_specific: true,
     sub_dir: "permissions",
-    src: "vzw_mvs_permissions",
+    src: "vzw_mvs_permissions.xml",
     filename_from_src: true,
 }

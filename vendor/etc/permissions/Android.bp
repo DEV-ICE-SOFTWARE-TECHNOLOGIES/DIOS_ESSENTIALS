@@ -4,7 +4,6 @@
 
 prebuilt_etc {
     name: "android.hardware.vr.headtracking",
-    vendor_specific: true,
     sub_dir: "permissions",
     src: "android.hardware.vr.headtracking.xml",
     filename_from_src: true,
@@ -12,7 +11,6 @@ prebuilt_etc {
 
 prebuilt_etc {
     name: "android.hardware.vr.high_performance",
-    vendor_specific: true,
     sub_dir: "permissions",
     src: "android.hardware.vr.high_performance.xml",
     filename_from_src: true,
@@ -20,8 +18,7 @@ prebuilt_etc {
 
 prebuilt_etc {
     name: "com.sonymobile.vr",
-    vendor_specific: true,
     sub_dir: "permissions",
-    src: "com.sonymobile.vr",
+    src: "com.sonymobile.vr.xml",
     filename_from_src: true,
 }
