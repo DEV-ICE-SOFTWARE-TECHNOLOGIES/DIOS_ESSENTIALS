@@ -147,6 +147,6 @@ PRODUCT_PACKAGES += \
     librsjni
 
 $(call inherit-product, $(DIOS_PATH)/product/product.mk)
-$(call inherit-product, $(DIOS_PATH)/system//system/system.mk)
+$(call inherit-product, $(DIOS_PATH)/system/system/system.mk)
 $(call inherit-product, $(DIOS_PATH)/system_ext/system-ext.mk)
 $(call inherit-product, $(DIOS_PATH)/vendor/vendor.mk)
