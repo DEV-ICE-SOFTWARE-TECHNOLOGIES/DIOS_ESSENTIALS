@@ -179,14 +179,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "preinstalled-packages-platform-overlays",
-    product_specific: true,
-    sub_dir: "sysconfig",
-    src: "preinstalled-packages-platform-overlays.xml",
-    filename_from_src: true,
-}
-
-prebuilt_etc {
     name: "preinstalled-packages-product-pixel-2017-and-newer",
     product_specific: true,
     sub_dir: "sysconfig",

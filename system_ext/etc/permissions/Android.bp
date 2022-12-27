@@ -19,34 +19,10 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "com.android.launcher3",
-    system_ext_specific: true,
-    sub_dir: "permissions",
-    src: "com.android.launcher3.xml",
-    filename_from_src: true,
-}
-
-prebuilt_etc {
     name: "com.android.omadm.radioconfig",
     system_ext_specific: true,
     sub_dir: "permissions",
     src: "com.android.omadm.radioconfig.xml",
-    filename_from_src: true,
-}
-
-prebuilt_etc {
-    name: "com.android.settings",
-    system_ext_specific: true,
-    sub_dir: "permissions",
-    src: "com.android.settings.xml",
-    filename_from_src: true,
-}
-
-prebuilt_etc {
-    name: "com.android.systemui",
-    system_ext_specific: true,
-    sub_dir: "permissions",
-    src: "com.android.systemui.xml",
     filename_from_src: true,
 }
 
@@ -175,30 +151,6 @@ prebuilt_etc {
     system_ext_specific: true,
     sub_dir: "permissions",
     src: "privapp-permissions-google-se.xml",
-    filename_from_src: true,
-}
-
-prebuilt_etc {
-    name: "qcrilhook",
-    system_ext_specific: true,
-    sub_dir: "permissions",
-    src: "qcrilhook.xml",
-    filename_from_src: true,
-}
-
-prebuilt_etc {
-    name: "qti_telephony_hidl_wrapper",
-    system_ext_specific: true,
-    sub_dir: "permissions",
-    src: "qti_telephony_hidl_wrapper.xml",
-    filename_from_src: true,
-}
-
-prebuilt_etc {
-    name: "qti_telephony_utils",
-    system_ext_specific: true,
-    sub_dir: "permissions",
-    src: "qti_telephony_utils.xml",
     filename_from_src: true,
 }
 
