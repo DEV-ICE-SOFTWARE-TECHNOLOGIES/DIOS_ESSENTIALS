@@ -179,14 +179,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "preinstalled-packages-platform-handheld-product",
-    product_specific: true,
-    sub_dir: "sysconfig",
-    src: "preinstalled-packages-platform-handheld-product.xml",
-    filename_from_src: true,
-}
-
-prebuilt_etc {
     name: "preinstalled-packages-platform-overlays",
     product_specific: true,
     sub_dir: "sysconfig",
