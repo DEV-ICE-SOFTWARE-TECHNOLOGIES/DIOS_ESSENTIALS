@@ -1,7 +1,7 @@
-# --------------------------------------------------------------------------------------------------
-# Copyright (C) 2022 DEV ICE TECHNOLOGIES
-# --------------------------------------------------------------------------------------------------
-DIOS_PATH := device/dios/dios
+##################################
+## Copyright © 2023 Marius Kopp ##
+##################################
+DIOS_PATH2 := device/dios
 
 PRODUCT_PACKAGES += \
     RecorderPrebuilt
@@ -146,7 +146,20 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     librsjni
 
-$(call inherit-product, $(DIOS_PATH)/product/product.mk)
-$(call inherit-product, $(DIOS_PATH)/system/system/system.mk)
-$(call inherit-product, $(DIOS_PATH)/system_ext/system-ext.mk)
-$(call inherit-product, $(DIOS_PATH)/vendor/vendor.mk)
+$(shell cp -rf $(DIOS_PATH2)/dios/product/* `pwd`/$(TARGET_OUT_PRODUCT)/)
+$(shell cp -rf $(DIOS_PATH2)/dios/system_ext/* `pwd`/$(TARGET_OUT_SYSTEM_EXT)/)
+$(shell cp -rf $(DIOS_PATH2)/dios/system/* `pwd`/$(TARGET_OUT_SYSTEM)/)
+$(shell cp -rf $(DIOS_PATH2)/dios/vendor/* `pwd`/$(TARGET_OUT_VENDOR)/)
+$(shell cp -rf $(DIOS_PATH2)/forks/pixel/product/etc/* `pwd`/$(TARGET_OUT_PRODUCT)/etc)
+$(shell cp -rf $(DIOS_PATH2)/forks/pixel/system_ext/etc/* `pwd`/$(TARGET_OUT_SYSTEM_EXT)/etc)
+$(shell cp -rf $(DIOS_PATH2)/forks/pixel/system/system/* `pwd`/$(TARGET_OUT_SYSTEM)/)
+$(shell cp -rf $(DIOS_PATH2)/forks/pixel/vendor/* `pwd`/$(TARGET_OUT_VENDOR)/)
+$(shell cp -rfn $(DIOS_PATH2)/forks/pixel/product/* `pwd`/$(TARGET_OUT_PRODUCT)/)
+$(shell cp -rfn $(DIOS_PATH2)/forks/pixel/system_ext/* `pwd`/$(TARGET_OUT_SYSTEM_EXT)/)
+$(shell cp -rfn $(DIOS_PATH2)/forks/pixel/system/system/* `pwd`/$(TARGET_OUT_SYSTEM)/)
+$(shell cp -rfn $(DIOS_PATH2)/forks/pixel/vendor/* `pwd`/$(TARGET_OUT_VENDOR)/)
+$(shell cp -rfn $(DIOS_PATH2)/forks/xperia/product_a/* `pwd`/$(TARGET_OUT_PRODUCT)/)
+$(shell cp -rfn $(DIOS_PATH2)/forks/xperia/system_a/system/* `pwd`/$(TARGET_OUT_SYSTEM)/)
+$(shell cp -rfn $(DIOS_PATH2)/forks/xperia/system_b/system/* `pwd`/$(TARGET_OUT_SYSTEM)/)
+$(shell cp -rfn $(DIOS_PATH2)/forks/xperia/system_ext_a/* `pwd`/$(TARGET_OUT_SYSTEM_EXT)/)
+$(shell cp -rfn $(DIOS_PATH2)/forks/xperia/vendor_a/* `pwd`/$(TARGET_OUT_VENDOR)/)
